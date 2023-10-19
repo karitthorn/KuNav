@@ -7,10 +7,10 @@ export default function footer() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             {" "}
             2023{" "}
-            <Link href="/" className="hover:underline">
-              KuNav™{" "}
+              KuNav{" "}
+            <Link href="https://github.com/karitthorn/KuNav#add-your-website-contribute" className="hover:underline">
+            . เพิ่มเว็ปไซต์ของคุณ 📌
             </Link>
-            . All Rights Reserved.
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
             <li>
