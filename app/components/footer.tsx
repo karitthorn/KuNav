@@ -7,9 +7,9 @@ export default function footer() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             {" "}
             2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               KuNav™{" "}
-            </a>
+            </Link>
             . All Rights Reserved.
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">

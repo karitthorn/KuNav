@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Ku Learn",
+      "description": "เว็ปไซต์สำหรับการเรียนออนไลน์",
+      "url": "https://learn.ku.th/",
+      "tag": "official"
+    },
+    {
+      "name": "Edufarm",
+      "description": "เว็ปไซต์สำหรับการเรียนออนไลน์",
+      "url": "https://edufarm.ku.ac.th/",
+      "tag": "official"
+    },
+    {
+      "name": "Ku Table",
+      "description": "ตารางเรียนที่อยากได้จากเว็บ KU จัดทำโดยไม่แสวงผลประโยชน์จากผู้ใช้",
+      "url": "https://ku-table.vercel.app/login",
+      "tag": "community"
+    },
+    {
+      "name": "KUCLAP",
+      "description": "เว็ปไซต์เเบ่งปันรีวิววิชาบูรณาการเเละ อาจารย์ ",
+      "url": "https://www.kuclap.com/",
+      "tag": "community"
+    }
+  ]
