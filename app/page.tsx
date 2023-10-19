@@ -21,8 +21,9 @@ export default function Home() {
     setSelectedOption(option);
     setDropdownVisible(false);
   };
-
-
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault(); //ป้องกัน รีเฟรซ
+  };
 
   return (
     <>
@@ -38,7 +39,7 @@ export default function Home() {
             </p>
             {/* ---------------------------------------------------------------- */}
             {/* Dropdown and Search Input */}
-            <form className="flex w-full justify-center items-center">
+            <form className="flex w-full justify-center items-center" onSubmit={handleSubmit}>
               <div className="flex ">
                 <label className="mb-2 text-sm font-medium text-gray-900 sr-only">
                   Your Email
@@ -94,7 +95,7 @@ export default function Home() {
                             onClick={() => changeDropdownOption("#Official")}
                             className="inline-flex w-full px-4 py-2 hover:bg-gray-100"
                           >
-                            Official
+                            <span className="flex w-2 h-2 mr-1 bg-green-500 rounded-full"></span>Official
                           </button>
                         </li>
                         <li>
@@ -103,7 +104,7 @@ export default function Home() {
                             onClick={() => changeDropdownOption("#Community")}
                             className="inline-flex w-full px-4 py-2 hover:bg-gray-100"
                           >
-                            Community
+                            <span className="flex w-2 h-2 mr-1 bg-yellow-300 rounded-full"></span>Community
                           </button>
                         </li>
                       </ul>
