@@ -22,5 +22,11 @@
       "description": "เว็ปไซต์เเบ่งปันรีวิววิชาบูรณาการเเละ อาจารย์ ",
       "url": "https://www.kuclap.com/",
       "tag": "community"
+    },
+    {
+      "name": "ระบบประเมินการสอน",
+      "description": "ระบบประเมินการสอน มหาวิทยาลัยเกษตรศาสตร์",
+      "url": "https://eassess.ku.ac.th/m/",
+      "tag": "offical"
     }
   ]
