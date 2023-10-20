@@ -34,5 +34,11 @@
       "description": "เว็ปเข้าใช้งานระบบลงทะเบียนนิสิต",
       "url": "https://my.ku.th/login",
       "tag": "official"
+    },
+    {
+      "name": "KUforest",
+      "description": "เว็ปรวมงานวิจัยมหาวิทยาลัยเกษตรศาสตร์ บางเขน",
+      "url": "https://research.ku.ac.th/forest/Department.aspx?CampusID=01%20%0D%0A",
+      "tag": "official"
     }
   ]

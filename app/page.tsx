@@ -9,9 +9,13 @@ type DropdownOption = "All" | "#Official" | "#Community";
 
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState<DropdownOption>("All");
-  const [searchQuery, setSearchQuery] = useState<string>(''); //  for the search query
-
+  const [searchQuery, setSearchQuery] = useState<string>(""); //  for the search query
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [displayCount, setDisplayCount] = useState(6); // State variable to control displayed items
+
+  const handleShowMore = () => {
+    setDisplayCount(displayCount + 6); // Increase the number of displayed items
+  };
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
@@ -39,7 +43,10 @@ export default function Home() {
             </p>
             {/* ---------------------------------------------------------------- */}
             {/* Dropdown and Search Input */}
-            <form className="flex w-full justify-center items-center" onSubmit={handleSubmit}>
+            <form
+              className="flex w-full justify-center items-center"
+              onSubmit={handleSubmit}
+            >
               <div className="flex ">
                 <label className="mb-2 text-sm font-medium text-gray-900 sr-only">
                   Your Email
@@ -95,7 +102,8 @@ export default function Home() {
                             onClick={() => changeDropdownOption("#Official")}
                             className="inline-flex w-full px-4 py-2 hover:bg-gray-100"
                           >
-                            <span className="flex w-2 h-2 mr-1 bg-green-500 rounded-full"></span>Official
+                            <span className="flex w-2 h-2 mr-1 bg-green-500 rounded-full"></span>
+                            Official
                           </button>
                         </li>
                         <li>
@@ -104,7 +112,8 @@ export default function Home() {
                             onClick={() => changeDropdownOption("#Community")}
                             className="inline-flex w-full px-4 py-2 hover:bg-gray-100"
                           >
-                            <span className="flex w-2 h-2 mr-1 bg-yellow-300 rounded-full"></span>Community
+                            <span className="flex w-2 h-2 mr-1 bg-yellow-300 rounded-full"></span>
+                            Community
                           </button>
                         </li>
                       </ul>
@@ -112,7 +121,7 @@ export default function Home() {
                   )}
                 </div>
               </div>
-              <div className="relative w-full"> 
+              <div className="relative w-full">
                 <input
                   type="search"
                   id="search-dropdown"
@@ -122,7 +131,6 @@ export default function Home() {
                   onChange={(e) => setSearchQuery(e.target.value)} // Handle search input change
                   required
                 />
-
               </div>
             </form>
 
@@ -141,10 +149,14 @@ export default function Home() {
                 }
                 return false; // Default to not showing anything
               })
-              .filter((item) =>
-              item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-              item.description.toLowerCase().includes(searchQuery.toLowerCase())
-            )
+              .filter(
+                (item) =>
+                  item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                  item.description
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase())
+              )
+              .slice(0, displayCount) // Display a limited number of items based on displayCount
               .map((item, index) => (
                 <div key={index} className="">
                   <WebsiteCard
@@ -156,6 +168,16 @@ export default function Home() {
                 </div>
               ))}
           </section>
+          {displayCount < data.length && (
+            <div className="flex justify-center mt-4">
+              <button
+                onClick={handleShowMore}
+                className="px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 shadow-md"
+              >
+                Show More
+              </button>
+            </div>
+          )}
           {/* ---------------------------------------------------------------- */}
         </div>
 
