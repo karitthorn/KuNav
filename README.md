@@ -8,7 +8,7 @@
 ## Add your website (contribute)
 Feel free to add your site 🌟
 เพิ่มเว็ปไซต์ในไฟล์นี้ [Here!](https://github.com/karitthorn/KuNav/blob/main/public/data/website.json)
-```
+```json
     {
       "name": "ชื่อเว็ป",
       "description": "คำอธิบาย",
