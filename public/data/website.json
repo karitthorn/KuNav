@@ -40,5 +40,11 @@
       "description": "เว็ปรวมงานวิจัยมหาวิทยาลัยเกษตรศาสตร์ บางเขน",
       "url": "https://research.ku.ac.th/forest/Department.aspx?CampusID=01%20%0D%0A",
       "tag": "official"
+    },
+    {
+      "name": "KU BOOK/SHOP",
+      "description": "เว็ปศูนย์หนังสือมหาวิทยาลัยเกษตรศาสตร์",
+      "url": "https://www.kubookol.com/",
+      "tag": "official"
     }
   ]
