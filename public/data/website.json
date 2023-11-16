@@ -46,5 +46,29 @@
       "description": "เว็ปศูนย์หนังสือมหาวิทยาลัยเกษตรศาสตร์",
       "url": "https://www.kubookol.com/",
       "tag": "official"
-    }
+    },
+    {
+      "name": "กองพัฒนานิสิต",
+      "description": "ค้นหากิจกรรมที่นิสิตสนใจ",
+      "url": "https://sa.ku.ac.th/",
+      "tag": "official"
+    },
+    {
+      "name": "สำนักหอสมุด",
+      "description": "ค้นหาหนังสือ เเละ อื่นๆ",
+      "url": "https://www.lib.ku.ac.th/",
+      "tag": "official"
+    },
+    {
+      "name": "สหกรณ์ออมทรัพย์",
+      "description": "สหกรณ์ออมทรัพย์มหาวิทยาลัยเกษตรศาสตร์",
+      "url": "https://www.coop.ku.ac.th/",
+      "tag": "official"
+    },
+    {
+      "name": "บริการห้องปฏิบัติการคอมพิวเตอร์ KITS",
+      "description": "จองใช้งานเครื่องคอมพิวเตอร์ (แบบบุคคล) ด้วยบัญชีผู้ใช้เครือข่ายนนทรี",
+      "url": "https://bookkits.ocs.ku.ac.th",
+      "tag": "official"
+    },
   ]
